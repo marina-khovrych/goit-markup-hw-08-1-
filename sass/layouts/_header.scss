@@ -1,0 +1,245 @@
+.nav {
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    background-color:#FFFFFF;
+    display: flex;
+    align-items: center;
+        @media screen and (min-width: 768px) {
+        height: 80px;
+        display: flex; 
+        align-items: center;    
+        scroll-padding-right: 15px;
+     }
+        @media screen and (min-width: 1200px) {
+        padding-left: 15px;
+    }
+    
+    
+     
+.page-header .nav {
+    align-items: center;
+
+    display: flex;
+}
+.web .logo-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #212121;
+    text-decoration: none;
+    font-family: Raleway, sans-serif; 
+    @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+         }
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+}
+    
+}
+.web {
+    color: #2196F3;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19em;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-family: Raleway, sans-serif; 
+}
+
+.link {
+    color:$primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding-top: 32px;
+    @media screen and (max-width: 767px) {
+        padding-bottom: 0;
+        padding-top: 40px;
+        font-size: 18px;
+        line-height: 1.1em;
+       }  
+    padding-bottom: 32px;
+    display: block;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: #2196F3;
+    }
+    &:focus {
+        color: #2196F3;
+    }
+     &-nav{
+    position: relative;
+    color: #2196F3;
+    }
+     &-nav::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+    @media screen and (max-width: 768px) {
+        bottom: -8px;   
+        position: absolute;
+    }    
+    }
+}
+.info .link {
+    padding-top: 0;
+    padding-bottom: 0;
+    // width: 138px; 
+    
+}
+.page-header {
+    background-color: #FFFFFF;
+    height: 60px;
+    border-bottom: 1px solid #ECECEC;
+    position: relative;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+    height: 80px;
+}
+}
+.team-icon {
+    margin-right: 10px;
+&:hover {
+    fill:#2196F3;
+   }
+}
+
+
+
+.site-nav .link.current {
+    color: #2196F3;
+    // @media screen and (max-width: 768px) {
+    //     width: 61px;
+    // }
+  }
+.site-nav-list { 
+    text-align: center;
+    display: inline-block;
+@media screen and (max-width: 767px) {
+     padding-top: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;   
+        margin-left: 88px;    
+        margin-right: 52px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;  
+        margin-right: 200px;
+    }
+}
+
+.item {
+    margin-right: 50px;
+    @media screen and (max-width: 767px) {
+       text-align: center;
+       margin-right: 0;
+    }
+    &:hover .team-icon {
+        fill: #2196F3;
+    }
+    &:focus .team-icon {
+        fill: #2196F3;
+    }
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+
+
+
+.info {
+   
+    margin-left: auto;
+    align-items: center;
+    display: block;
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+        margin-bottom: 0;
+        margin-right: auto;
+         }  
+    @media screen and (min-width: 768px) {
+    display: block;   
+    padding-bottom: 21px;
+    padding-top: 11px;
+    margin:0;
+    
+    }
+    @media screen and (min-width: 1200px) {
+    display: flex; 
+    }
+}
+
+.info .item {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    margin-top: 10px;
+    @media screen and (max-width: 767px) {
+       justify-content: center;
+       margin-top: 16px;
+      
+        }  
+  
+}
+.info .item + .item {
+    @media screen and (min-width: 1200px) {
+        margin-left: 50px;
+        } 
+ 
+}
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+        display: none;   
+        }
+}
+.menu-button .icon-сross {
+    display: none;
+}
+.menu-button.is-open .icon-сross {
+    display: block;
+}
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+.navigation {
+    @media screen and (max-width: 767px) {
+        padding-top: 20px; 
+        }
+   
+}
+// .current {
+//     // color: #2196F3;
+//     position: relative;
+//     display: inline;
+//   width: 100%;
+//     // text-align: center;
+// }  
+.menu-info {
+   display: flex;
+   @media screen and (max-width: 767px) {
+    margin: 0;
+    padding: 0;
+    }
+   
+}

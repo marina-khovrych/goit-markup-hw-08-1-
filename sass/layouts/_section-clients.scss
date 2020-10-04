@@ -1,0 +1,138 @@
+
+.clients {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.17em;
+    letter-spacing: 0.03em;
+    font-family: Roboto;
+     &-list {
+        margin-top: 0;
+        padding-bottom: 0;
+        flex-wrap: wrap;
+        // box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        padding-inline-start: 0; 
+       
+    }
+}
+.section-clients{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.logo-link {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     &:hover  {
+        border: 1px solid #2196F3;
+    }
+     &:hover .logo-one {
+        fill: #2196F3;
+    }
+    
+     &:hover .logo-two {
+        fill: #2196F3;
+    }
+     &:hover .logo-three {
+        fill: #2196F3;
+    }
+     &:hover .logo-four {
+        fill: #2196F3;
+    }
+     &:hover .logo-five {
+        fill: #2196F3;
+    }
+     &:hover .logo-six {
+        fill: #2196F3;
+    }
+}
+
+
+.partner-list{
+ 
+    // margin: 0;
+    // margin-right: 30px; 
+    width: calc((100% - 30px) / 2);
+  
+    height: 90px;
+    margin-bottom: 30px;
+    color: #2196F3;
+    
+     &:hover {
+        color: #2196F3;
+    }
+    &:nth-last-child(-n+3) {
+        margin-bottom: 0;
+        } 
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 60px) / 3);
+            margin-right: 0;
+           }
+    
+}
+
+
+
+.logo-one {
+    width: 44px;
+    height: 49px;
+    fill: #AFB1B8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-two {
+    width: 40px;
+    height: 52px;
+    fill: #AFB1B8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-three {
+    width: 41px;
+    height: 43px;
+    fill: #AFB1B8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-four {
+    width: 80px;
+    height: 42px;
+    fill: #AFB1B8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-five {
+    width: 59px;
+    height: 47px;
+    fill: #AFB1B8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-six {
+    width: 88px;
+    height: 45px;
+    fill: #AFB1B8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
